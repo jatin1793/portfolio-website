@@ -64,21 +64,20 @@ toggle.addEventListener("click", function () {
     if (flag === 0) {
         delay:1;
         toggle.style.transform = "translate(0%,88%)";
-        document.documentElement.style.setProperty("--pri", "rgb(255, 255, 255)")
-        document.documentElement.style.setProperty("--sec", "rgb(23, 23, 23)")
-        document.documentElement.style.setProperty("--shw", "#e0553a")
+        document.documentElement.style.setProperty("--pri", "rgb(23, 23, 23)")
+        document.documentElement.style.setProperty("--sec", "rgb(255, 255, 255)")
+        document.documentElement.style.setProperty("--shw", "#FBE094")
         flag = 1;
     }
     else {
         delay:1;
         toggle.style.transform = "translate(0%,0%)";
-        document.documentElement.style.setProperty("--pri", "rgb(23, 23, 23)")
-        document.documentElement.style.setProperty("--sec", "rgb(255, 255, 255)")
-        document.documentElement.style.setProperty("--shw", "#FBE094")
+        document.documentElement.style.setProperty("--pri", "rgb(255, 255, 255)")
+        document.documentElement.style.setProperty("--sec", "rgb(23, 23, 23)")
+        document.documentElement.style.setProperty("--shw", "#e0553a")
         flag = 0;
     }
 })
-
 
 
 
@@ -142,19 +141,6 @@ text2.forEach(function (elem) {
         }
     });
 })
-
-
-// CURSOR ENLARGES ON HOVER OVER CREATIVE WEB DEVELOPER IN PAGE 1
-// var cursor = document.querySelector("#cursor");
-// document.querySelector(".best2").addEventListener("mousemove", function () {
-//     cursor.style.height = '15vh';
-//     cursor.style.width = '15vh';
-// })
-// document.querySelector(".best2").addEventListener("mouseleave", function () {
-//     cursor.style.height = '3vh';
-//     cursor.style.width = '3vh';
-// })
-
 
 // LINE 1 OF MARQUEE EFFECT OF PAGE 2
 gsap.to('.marquee h1', {
@@ -234,19 +220,6 @@ function cur() {
 };
 cur();
 
-
-// --------------------------------------------------------
-// gsap.set(".w1", { opacity: 1 });
-// gsap.from(".w1",{
-//     scrollTrigger:{
-//         trigger:"#webhead",
-//         scroller:"body",
-//         start:"top 60%",
-//     },
-//     opacity: 0,
-//     duration:1.5,
-//     x:"10vw", 
-// })
 
 gsap.from("#c1 #webcap",{
     scrollTrigger:{
@@ -383,52 +356,3 @@ gsap.to('#webprojects', {
 })
 
   
-
-
-
-//FIREBASE
-// const form = document.getElementById('contactform');
-// const alert = document.querySelector(".alert");
-
-// const firebaseConfig = {
-//     apiKey: "AIzaSyBLrmQK0BS6xcdYLk9cq1XHEmd9e3zrBN4",
-//     authDomain: "portfoliowebsite-42824.firebaseapp.com",
-//     databaseURL: "https://portfoliowebsite-42824-default-rtdb.asia-southeast1.firebasedatabase.app",
-//     projectId: "portfoliowebsite-42824",
-//     storageBucket: "portfoliowebsite-42824.appspot.com",
-//     messagingSenderId: "181429551702",
-//     appId: "1:181429551702:web:8baf6b7d4d4aea810171f7",
-//     measurementId: "G-TSZPTZE7HC"
-//   };
-  
-//   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
-
-//   const database = firebase.database()
-
-//   const ref = database.ref("messages")
-
-
-// form.addEventListener("submit",(e)=>{
-
-//     e.preventDefault();
-//     const name = document.getElementById('name').value;
-//     const email = document.getElementById('email').value;
-//     const message = document.getElementById('message').value;
-
-
-//     ref.push({
-//         name:name,
-//         email:email,
-//         message:message
-//     })
-
-//     console.log(name,email,message);
-//     alert.style.display = "block"
-
-//     setTimeout(()=>{
-//         alert.style.display = "none"
-//     },2000)
-
-//     form.reset()
-// })

@@ -1,23 +1,23 @@
 /* THEME CHANGE CSS SYNTAX */
 :root {
-    --pri: rgb(23, 23, 23);
-    --sec: white;
-    --shw: #FBE094;
+    --pri: rgb(255, 255, 255);
+    --sec: rgb(23, 23, 23);
+    --shw: #e0553a;
 }
 
 @font-face {
     font-family: 'gilroy light';
-    src: url(./Gilroy-Light.ttf);
+    src: url(./fonts/Gilroy-Light.ttf);
 }
 
 @font-face {
     font-family: 'gilroy';
-    src: url(./Gilroy-Regular.ttf);
+    src: url(./fonts/Gilroy-Regular.ttf);
 }
 
 @font-face {
     font-family: 'VisbyCF-ExtraBold';
-    src: url(./VisbyCF-ExtraBold.otf);
+    src: url(./fonts/VisbyCF-ExtraBold.otf);
 }
 
 *{
